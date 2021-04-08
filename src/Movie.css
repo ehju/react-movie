@@ -1,11 +1,18 @@
 .item {
-    background-color : gray;
+    background-color : #EEEBDD;
     width:250px;
-    height:400px;
+    height:350px;
     margin:10px;
+    border-radius:20px;
+    text-align:center;
 }
 .item > img{
-    height: 200px;
+    height: 220px;
     display:block;
     margin:auto;
+    border-radius:20px;
+}
+.title {
+    height:100px;
+    display:auto;
 }

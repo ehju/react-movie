@@ -3,3 +3,9 @@
     flex-wrap:wrap;
     justify-content: space-evenly;
 }
+.loader {
+    text-align:center;
+}
+.content {
+    text-align:center;
+}
