@@ -1,0 +1,11 @@
+.item {
+    background-color : gray;
+    width:250px;
+    height:400px;
+    margin:10px;
+}
+.item > img{
+    height: 200px;
+    display:block;
+    margin:auto;
+}
