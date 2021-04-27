@@ -4,7 +4,7 @@ import "./Movie.css";
 function Movie({ id, title, poster, rating }) {
   return (
     <div className="item">
-      <h3 className="movie-title">{title}</h3>
+      <h3>{title}</h3>
       <img src={poster} alt={title}></img>
       <p>rating : {rating} / 10.0 </p>
     </div>
