@@ -1,4 +1,4 @@
-.item {
+.movie_item {
     background-color : #EEEBDD;
     width:250px;
     height:350px;
@@ -6,7 +6,7 @@
     border-radius:20px;
     text-align:center;
 }
-.item > img{
+.movie_item > img{
     height: 220px;
     display:block;
     margin:auto;

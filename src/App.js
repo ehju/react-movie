@@ -29,7 +29,7 @@ class App extends Component {
       <div>
         {isLoading ? (
           <div className="loader">
-            <h1>"Loading..."</h1>
+            <span className="loader_text">"Loading..."</span>
           </div>
         ) : (
           <div className="content">
@@ -43,6 +43,8 @@ class App extends Component {
                     title={movie.title}
                     poster={movie.medium_cover_image}
                     rating={movie.rating}
+                    summary={movie.summary}
+                    genres={movie.genres}
                   />
                 );
               })}
