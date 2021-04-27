@@ -4,13 +4,20 @@ import "./Movie.css";
 function Movie({ id, title, poster, rating, summary, genres }) {
   return (
     <div className="movie_item">
-      <h3>{title}</h3>
       <img src={poster} alt={title}></img>
-      <p>rating : {rating} / 10.0 </p>
-      <p>{summary.slice(0,140)}...</p>
-      <ul>
-      {genres.map((genre,index) =><span className="genre_name" key={index}>#{genre}</span>)}
-      </ul>
+      <div className="movie-info">
+        <h3>{title}</h3>
+        <p>rating : {rating} / 10.0 </p>
+        <p>{summary.slice(0, 140)}...</p>
+        <div>
+          {genres.map((genre, index) => (
+            <span className="genre_name" key={index}>
+              #{genre}
+            </span>
+          ))}
+          </div>
+        
+      </div>
     </div>
   );
 }
@@ -21,6 +28,6 @@ Movie.propTypes = {
   poster: PropTypes.string.isRequired,
   rating: PropTypes.number.isRequired,
   summary: PropTypes.string.isRequired,
-  genres : PropTypes.arrayOf(PropTypes.string).isRequired
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 export default Movie;
