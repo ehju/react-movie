@@ -12,7 +12,7 @@ function Movie({ id, title, poster, rating, summary, genres }) {
         <div>
           {genres.map((genre, index) => (
             <span className="genre_name" key={index}>
-              #{genre}
+              #{genre}&nbsp;
             </span>
           ))}
           </div>

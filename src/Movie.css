@@ -18,11 +18,26 @@
 }
 .movie_item > .movie-info{
     width: 300px;
-    margin-left : 20px;
-    margin-right :20px;
+    margin:auto;
     padding-top:10px;
     border-radius:20px;
     color :gray;
+}
+@media only screen and (max-width : 600px){
+    .movie_item > img{
+        display:block;
+        width: 180px;
+        border-radius:20px;
+        margin: auto;
+        margin-top : -20px;
+    }
+    .movie_item {
+        height:auto;
+        display: grid;
+        text-align:center;
+        align-content:center;
+        padding: 10px;
+    }
 }
 .title {
     height:100px;
