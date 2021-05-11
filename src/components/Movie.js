@@ -15,8 +15,7 @@ function Movie({ id, title, poster, rating, summary, genres }) {
               #{genre}&nbsp;
             </span>
           ))}
-          </div>
-        
+        </div>
       </div>
     </div>
   );

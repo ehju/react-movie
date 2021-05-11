@@ -26,14 +26,12 @@ class Home extends Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <div>
+      <section class="container">
         {isLoading ? (
           <div className="loader">
             <span className="loader_text">"Loading..."</span>
           </div>
         ) : (
-          <div className="content">
-            <h1>Movie Library</h1>
             <div className="movies">
               {movies.map((movie) => {
                 return (
@@ -49,9 +47,8 @@ class Home extends Component {
                 );
               })}
             </div>
-          </div>
         )}
-      </div>
+      </section>
     );
   }
 }
