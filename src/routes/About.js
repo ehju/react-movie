@@ -1,6 +1,6 @@
 import React from "react";
 
 function About(){
-    return(<h1>Hello world!</h1>)
+    return(<section className="container">Hello</section>)
 }
 export default About;
