@@ -7,7 +7,7 @@ function Movie({ id, title, poster, rating, summary, genres }) {
   return (    
     <Link
     to={{
-      pathname : "/movie-detail",
+      pathname : `/movie-detail/${id}`,
       state :  {
         title,
         poster,
@@ -19,8 +19,7 @@ function Movie({ id, title, poster, rating, summary, genres }) {
   }
 >      
 <div className="movie_item">
-      <img src={poster} alt={title}></img>
-      
+      <img src={poster} alt={title}></img>      
       <div className="movie-info">
         <h3>{title}</h3>
         <p>rating : {rating} / 10.0 </p>
