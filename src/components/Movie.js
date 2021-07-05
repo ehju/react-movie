@@ -1,10 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import PropTypes from "prop-types";
 import "./Movie.css";
+
 function Movie({ id, title, poster, rating, summary, genres }) {
-  return (
-    <div className="movie_item">
+  return (    
+    <Link
+    to={{
+      pathname : "/movie-detail",
+      state :  {
+        title,
+        poster,
+        summary,
+        rating,
+        genres
+      }
+    }
+  }
+>      
+<div className="movie_item">
       <img src={poster} alt={title}></img>
+      
       <div className="movie-info">
         <h3>{title}</h3>
         <p>rating : {rating} / 10.0 </p>
@@ -18,6 +34,8 @@ function Movie({ id, title, poster, rating, summary, genres }) {
         </div>
       </div>
     </div>
+    </Link>
+
   );
 }
 
