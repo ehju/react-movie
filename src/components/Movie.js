@@ -9,7 +9,7 @@ function Movie({ id, title, poster, rating, summary, genres }) {
         <h3>{title}</h3>
         <p>rating : {rating} / 10.0 </p>
         <p>{summary.slice(0, 140)}...</p>
-        <div>
+        <div className="genres">
           {genres.map((genre, index) => (
             <span className="genre_name" key={index}>
               #{genre}&nbsp;
