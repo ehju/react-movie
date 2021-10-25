@@ -10,4 +10,4 @@ React.js 로 개발하고 github pages 를 통해 배포
 https://ehju.github.io/react-movie/#/
 
 ## StudyNote
-Check out [StudyNote](#StudyNote.md)
+Check out [StudyNote](#../StudyNote.md)
