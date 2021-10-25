@@ -9,6 +9,5 @@ React.js 로 개발하고 github pages 를 통해 배포
 ## 접속 링크
 https://ehju.github.io/react-movie/#/
 
-## WHAT I learned
-- React Components
-- API calling
+## StudyNote
+Check out [StudyNote](#StudyNote.md)
